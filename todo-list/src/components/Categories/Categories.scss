@@ -1,0 +1,34 @@
+.app__categories {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .app__categories-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start !important;
+    padding: 15px 5px;
+
+    .category-pill {
+      background-color: var(--lightgray-color);
+      padding: 5px 20px;
+      border-radius: 15px;
+      color: #666d75;
+      margin-inline-end: 15px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
+      }
+
+      &.active {
+        background-color: var(--secondary-color);
+        color: #fff;
+      }
+    }
+  }
+}

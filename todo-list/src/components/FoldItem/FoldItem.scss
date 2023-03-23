@@ -1,0 +1,31 @@
+.fold-item {
+  .fold-header {
+    justify-content: flex-start !important;
+    cursor: pointer;
+    p {
+      margin: 0 15px 0 10px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #4a4c4b;
+    }
+
+    hr {
+      width: 50%;
+    }
+
+    svg {
+      color: #98a2ac;
+      &:last-of-type {
+        margin-inline-start: auto;
+      }
+    }
+  }
+
+  &:last-of-type {
+    margin-top: 15px;
+  }
+
+  .app__list-container {
+    padding: 10px 5px;
+  }
+}
